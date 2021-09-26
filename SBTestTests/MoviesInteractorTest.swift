@@ -2,9 +2,16 @@ import XCTest
 @testable import SBTest
 
 class MoviesInteractorTest: XCTestCase {
+    var sut: MovieListInteractor?
+    let presenter = MoviesListPresenterMock()
+    let service = MovieServiceMock()
     
+    override func setUp() {
+        sut = MovieListInteractor(presenter: presenter, service: service)
+    }
     func testSuccessFetchMovie() {
-        #warning("implement this unit test")
+        sut?.fetchMovieList()
+        XCTAssertTrue(service.isRequestMovieListCalled)
     }
     
     func testFailureFetchMovie() {
@@ -12,8 +19,13 @@ class MoviesInteractorTest: XCTestCase {
     }
     
     func testAssertData() {
-        #warning("implement this unit test")
+        service.requestMovieList { result in
+            switch result {
+            case .success(let movieList):
+                XCTAssertNotNil(movieList)
+            default:
+                break
+            }
+        }
     }
-    
-    
 }

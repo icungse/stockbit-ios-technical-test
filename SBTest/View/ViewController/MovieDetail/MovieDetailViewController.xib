@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -10,6 +10,17 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MovieDetailViewController" customModule="SBTest" customModuleProvider="target">
             <connections>
+                <outlet property="countryLabel" destination="84B-2W-2zv" id="53y-PN-S3e"/>
+                <outlet property="descriptionLabel" destination="gau-Wb-NVs" id="lK9-5L-p1m"/>
+                <outlet property="genreLabel" destination="pHh-uw-BGo" id="G6V-yW-gcf"/>
+                <outlet property="movieImageView" destination="GUR-YI-lfc" id="5mE-8U-Bsf"/>
+                <outlet property="ratingLabel" destination="zHY-QI-lsb" id="Lz1-In-dJw"/>
+                <outlet property="star1" destination="Hg9-XJ-b9P" id="TF3-N3-MkY"/>
+                <outlet property="star2" destination="ZeV-sS-WEY" id="HVb-Dg-2OZ"/>
+                <outlet property="star3" destination="aYO-ll-O0r" id="M6d-bw-za2"/>
+                <outlet property="star4" destination="Jzm-MH-P2H" id="qFg-Du-S60"/>
+                <outlet property="star5" destination="8zP-fv-zFO" id="0IY-XD-x22"/>
+                <outlet property="titleLabel" destination="Gkc-Ah-aEf" id="jub-eE-822"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -25,7 +36,7 @@
                     </constraints>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gkc-Ah-aEf">
-                    <rect key="frame" x="20" y="296.5" width="59" height="38.5"/>
+                    <rect key="frame" x="20" y="296.5" width="374" height="38.5"/>
                     <fontDescription key="fontDescription" type="system" pointSize="32"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
@@ -115,6 +126,7 @@
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="gau-Wb-NVs" secondAttribute="trailing" constant="20" id="03X-El-HMG"/>
                 <constraint firstItem="zHY-QI-lsb" firstAttribute="leading" secondItem="d0w-65-pN6" secondAttribute="trailing" constant="10" id="24W-9E-2wX"/>
                 <constraint firstItem="EU9-Vx-TE4" firstAttribute="top" secondItem="pHh-uw-BGo" secondAttribute="bottom" constant="24" id="3Ub-iR-dnQ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Gkc-Ah-aEf" secondAttribute="trailing" constant="20" id="9eJ-Z8-bis"/>
                 <constraint firstItem="GUR-YI-lfc" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="CKZ-pG-YxG"/>
                 <constraint firstItem="84B-2W-2zv" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="DGF-k3-I9h"/>
                 <constraint firstItem="zHY-QI-lsb" firstAttribute="centerY" secondItem="8zP-fv-zFO" secondAttribute="centerY" id="DhF-Kh-1wo"/>

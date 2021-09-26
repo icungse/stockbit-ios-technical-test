@@ -19,6 +19,14 @@ class MovieDetailPresenter: IMovieDetailPresenter {
     }
     
     func presentMovieDetail(response: MovieDetailModel.Response) {
-        #warning("Handle to present movie detail")
+        let movieResponse = response.movie
+        let viewModel = MovieDetailModel.ViewModel(
+            title: movieResponse.title,
+            country: movieResponse.detail.country,
+            thumbnailLandscape: movieResponse.detail.thumbnailLandscape,
+            rating: movieResponse.rating,
+            genre: movieResponse.detail.genre,
+            description: movieResponse.detail.description)
+        view?.displayMovieDetail(viewModel: viewModel)
     }
 }

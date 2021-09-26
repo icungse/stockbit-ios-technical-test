@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -63,7 +63,7 @@
                         </subviews>
                     </stackView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qfZ-v5-Q1p">
-                        <rect key="frame" x="104" y="10" width="30" height="18"/>
+                        <rect key="frame" x="104" y="10" width="307" height="18"/>
                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -102,8 +102,21 @@
                     <constraint firstItem="qCB-k5-Nm0" firstAttribute="leading" secondItem="WkW-Yg-x3p" secondAttribute="leading" constant="20" id="lnX-Mq-twc"/>
                     <constraint firstItem="ix6-XN-NLX" firstAttribute="top" secondItem="bct-SX-9Xg" secondAttribute="bottom" constant="5" id="qno-QD-rVB"/>
                     <constraint firstItem="bct-SX-9Xg" firstAttribute="leading" secondItem="qfZ-v5-Q1p" secondAttribute="leading" id="r2u-EO-37Y"/>
+                    <constraint firstAttribute="trailing" secondItem="qfZ-v5-Q1p" secondAttribute="trailing" constant="20" id="tLL-Lt-8Ao"/>
                 </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="descriptionLabel" destination="UIA-UV-QDJ" id="Wtz-og-qY5"/>
+                <outlet property="movieImageView" destination="qCB-k5-Nm0" id="MNy-62-4vD"/>
+                <outlet property="ratingLabel" destination="sSl-rp-VNH" id="vJA-uT-BaC"/>
+                <outlet property="releaseLabel" destination="ix6-XN-NLX" id="ZWz-0h-kDR"/>
+                <outlet property="star1" destination="4oF-Pz-Obc" id="I2o-Cm-VIB"/>
+                <outlet property="star2" destination="bdo-TJ-wHn" id="oUW-5D-5y5"/>
+                <outlet property="star3" destination="r4m-S3-aM9" id="Mfo-b9-PvB"/>
+                <outlet property="star4" destination="3jS-4I-mFJ" id="GdI-iW-oId"/>
+                <outlet property="star5" destination="ddC-my-CpH" id="NSR-Oe-Uhg"/>
+                <outlet property="titleLabel" destination="qfZ-v5-Q1p" id="b1B-d5-nwO"/>
+            </connections>
             <point key="canvasLocation" x="157.24637681159422" y="97.767857142857139"/>
         </tableViewCell>
     </objects>

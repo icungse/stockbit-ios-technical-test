@@ -13,6 +13,11 @@ struct MovieDetailModel {
     }
     
     struct ViewModel {
-        
+        var title: String
+        var country: String
+        var thumbnailLandscape: String
+        var rating: String
+        var genre: String
+        var description: String
     }
 }

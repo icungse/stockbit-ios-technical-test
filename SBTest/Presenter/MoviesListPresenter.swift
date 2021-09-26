@@ -8,7 +8,7 @@
 import Foundation
 
 protocol IMoviesPresenter {
-    func presentSuccessGetMovieList()
+    func presentSuccessGetMovieList(movieList: MovieList)
 }
 
 class MoviesListPresenter: IMoviesPresenter {
@@ -21,8 +21,7 @@ class MoviesListPresenter: IMoviesPresenter {
 
     // MARK: Internal
 
-    func presentSuccessGetMovieList() {
-        view?.displaySuccesGetMoviesList()
+    func presentSuccessGetMovieList(movieList: MovieList) {
+        view?.displaySuccesGetMoviesList(movieList: movieList)
     }
-
 }
